@@ -362,17 +362,8 @@
   .rounded-lg {
     border-radius: var(--radius-lg);
   }
-  .rounded-tl-xl {
-    border-top-left-radius: var(--radius-xl);
-  }
-  .rounded-tr-xl {
-    border-top-right-radius: var(--radius-xl);
-  }
-  .rounded-br-xl {
-    border-bottom-right-radius: var(--radius-xl);
-  }
-  .rounded-bl-xl {
-    border-bottom-left-radius: var(--radius-xl);
+  .rounded-xl {
+    border-radius: var(--radius-xl);
   }
   .border {
     border-style: var(--tw-border-style);
@@ -746,14 +737,29 @@
       gap: calc(var(--spacing) * 20);
     }
   }
+  .lg\:rounded-tl-xl {
+    @media (width >= 64rem) {
+      border-top-left-radius: var(--radius-xl);
+    }
+  }
+  .lg\:rounded-tr-xl {
+    @media (width >= 64rem) {
+      border-top-right-radius: var(--radius-xl);
+    }
+  }
+  .lg\:rounded-br-xl {
+    @media (width >= 64rem) {
+      border-bottom-right-radius: var(--radius-xl);
+    }
+  }
+  .lg\:rounded-bl-xl {
+    @media (width >= 64rem) {
+      border-bottom-left-radius: var(--radius-xl);
+    }
+  }
   .lg\:p-4 {
     @media (width >= 64rem) {
       padding: calc(var(--spacing) * 4);
-    }
-  }
-  .lg\:p-6 {
-    @media (width >= 64rem) {
-      padding: calc(var(--spacing) * 6);
     }
   }
   .lg\:p-8 {
