@@ -1,0 +1,41 @@
+@font-face {
+    font-family: "Poppins";
+    src: url("../assets/fonts/Poppins/Poppins-Regular.ttf");
+  }
+
+@import "tailwindcss";
+
+@theme{
+    --font-primary: "Poppins","sans-serif";
+}
+
+@layer utilities {
+.slick-slide {
+    position: relative;
+    z-index: 1;
+    opacity: 0.5;
+    transform: scale(0.85);
+    transition: transform 0.4s ease, opacity 0.4s ease, z-index 0.4s;
+  }
+  
+  /* Styles for the center slide */
+  .slick-center {
+    z-index: 10;
+    opacity: 1;
+    transform: scale(1);
+  }
+  .slick-slide:not(.slick-center):nth-child(even) {
+    transform: scale(0.85) rotateY(6deg);
+  }
+  
+  .slick-slide:not(.slick-center):nth-child(odd) {
+    transform: scale(0.85) rotateY(-6deg);
+  }
+  .slick-list,
+  .slick-track {
+    overflow: visible;
+  }
+  .card{
+    margin: 10px -40px;
+  }
+  }
