@@ -35,8 +35,8 @@ const mobileMenu = document.getElementById('mobile-menu');
 const menuIcon = document.getElementById('menu-icon');
 
 mobileMenuBtn.addEventListener('click', () => {
-  const isOpen = menuIcon.src.includes("menu.svg");
-  menuIcon.src = isOpen ? "close.svg" : "menu.svg";
+  const isOpen = menuIcon.src.includes("assets/images/menu.svg");
+  menuIcon.src = isOpen ? "assets/images/close.svg" : "assets/images/menu.svg";
   mobileMenu.classList.toggle("hidden");
 });
 
