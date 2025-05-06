@@ -44,7 +44,7 @@ tabButtons.forEach((tabButton, i) => {
     tabButton.addEventListener("click", function(){
 
         //this will remove styling from the currently active tab
-        tabButtons.forEach(tabButton => tabButton.classList.remove("bg-[#f8f4e9]", "text-[#ba8282]","rounded-full"));
+        tabButtons.forEach(tabButton => tabButton.classList.remove("bg-[#f8f4e9]", "text-[#995a5a]","rounded-full"));
         // //this will remove the currently displaying tab content
          tabContent.forEach(tab => tab.classList.add("hidden"));
 
@@ -53,6 +53,6 @@ tabButtons.forEach((tabButton, i) => {
          tabContent[i].classList.add("block");
         
         // //this will make the selected tab appear as the active tab
-        tabButton.classList.add("bg-[#f8f4e9]", "text-[#ba8282]", "rounded-full");
+        tabButton.classList.add("bg-[#f8f4e9]", "text-[#995a5a]", "rounded-full");
     })
 });
